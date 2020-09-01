@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/server"
+        android:layout_width="100dp"
+        android:layout_marginTop="13dp"
+        android:layout_height="100dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Storage"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="{Storage}"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TotalStorage"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:text="{Total Storage}"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/FreeStorage"
+            android:textStyle="bold"
+            android:textColor="@color/zaitun"
+            android:text="{Free Storage}"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/UsedStorage"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:text="{Used Storage}"/>
+
+        <ProgressBar
+            android:id="@+id/pbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="#4CAF50"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
